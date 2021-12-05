@@ -14,8 +14,11 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function concatenateStrings(value1, value2) {
-    
-} */
+return ;
+}
+  var a = prompt('enter a');
+var b = prompt('enter b');
+console.log( a + b); */
 // ---------------------------------------------------- //
 
 
@@ -31,8 +34,11 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function getStringFromTemplate(firstName, lastName) {
-    
-} */
+ return
+}
+let firstName = prompt('Enter First Name:');
+let lastName = prompt('Enter Last Name:');
+console.log(`Hello, ${firstName} ${lastName}!`); */
 // ---------------------------------------------------- //
 
 
@@ -47,7 +53,12 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function repeatString(value, count) {
-    
+    var new_str = '';
+    while (n-- > 0) new_str += str;
+    return new_str;
+}
+var f = prompt('enter number of repetitions');
+console.log(repeatStr('Snow',f));
 } */
 // ---------------------------------------------------- //
 
@@ -87,7 +98,9 @@
 // ---------------------------------------------------- //
 /* function extractEmails(str) {
     
-} */
+}
+var emails ='angus.young@gmail.com;\n brian.johnson@hotmail.com;\n bon.scott@yahoo.com';
+console.log(emails); */
 // ---------------------------------------------------- //
 
 
@@ -109,8 +122,11 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function getRectangleArea(width, height) {
-   
-} */
+  return ;  
+} 
+width = prompt('enter width');
+height= prompt('enter height');
+console.log(width*height);*/
 // ---------------------------------------------------- //
 
 
@@ -127,7 +143,10 @@
 // ---------------------------------------------------- //
 /* function getLinearEquationRoot(a, b) {
     
-} */
+} let a = prompt('enter a');
+let b = prompt('enter b');
+let x = 0-a*b;
+console.log(x);*/
 // ---------------------------------------------------- //
 
 
@@ -143,8 +162,10 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function parseNumberFromString(value) {
-
-} */
+return ;
+}
+ a = prompt('enter number');
+console.log(Number(a)); */
 // ---------------------------------------------------- //
 
 
@@ -200,9 +221,12 @@
 // ---------------------------------------------------- //
 // YOUR ANSWER
 // ---------------------------------------------------- //
-/* function getArrayOfPositives(arr) {
-   
-} */
+/* var myArray = [-33, 27, 6, 0, -42, -11, 69, ];
+
+ function getArrayOfPositives(array) {
+  return array.filter(value => value > 0);
+}
+console.log(getArrayOfPositives(myArray)); */
 // ---------------------------------------------------- //
 
 
@@ -218,8 +242,10 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function getUpperCaseStrings(arr) {
-    
-} */
+    return (a);
+}
+let a=prompt('enter letter:');
+console.log(a.toUpperCase()); */
 // ---------------------------------------------------- //
 
 
@@ -234,8 +260,13 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function insertItem(arr, item, index) {
-    
-} */
+    return 
+}
+const readyArray = [15, 24, 6, 1, 46] ;
+var a = prompt('enter element');
+var b = prompt('enter position');
+readyArray.splice(b, 0, a);
+console.log(readyArray); */
 // ---------------------------------------------------- //
 
 
@@ -267,8 +298,12 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function getSecondItems(arr) {
-   
-} */
+   return;
+}
+var arr = [44,25,78,21,15,57,66,88,91,17,11,42]; 
+var i = 0;
+var a = arr.filter(e => (++i) % 2 === 0);
+console.log(a); */
 // ---------------------------------------------------- //
 
 
@@ -285,9 +320,15 @@
 // ---------------------------------------------------- //
 // YOUR ANSWER
 // ---------------------------------------------------- //
-/* function findAllOccurences(arr, item) {
+/*  var str = prompt('enter something');
+    var symb =prompt('enter symbol');
+function findAllOccurences(arr, item) {
+ for (var count = +1, index = 0; index != -1; count++, index = str.indexOf(symb, index + 1));
 
-} */
+  return count;
+}
+
+console.log(count(str, symb)); */
 // ---------------------------------------------------- //
 
 
@@ -304,7 +345,27 @@
 // YOUR ANSWER
 // ---------------------------------------------------- //
 /* function getIntervalArray(start, end) {
-   
+ return
+}
+var range = {
+  from : prompt('enter num'),
+  to : prompt('enter num'),  
+  [Symbol.iterator]() {
+    this.current = this.from;
+    return this;
+  },
+
+  next() {
+    if (this.current <= this.to) {
+      return { done: false, value: this.current++ };
+    } else {
+      return { done: true };
+    }
+  }
+};
+
+for (var num of range) {
+  console.log(num);
 } */
 // ---------------------------------------------------- //
 
@@ -330,7 +391,10 @@
 // ---------------------------------------------------- //
 /* function parseDataFromRfc2822(value) {
     
-} */
+}
+let a
+a= Date.parse('Thu, 12 Jan 2021 20:04:00');
+console.log(a); */
 // ---------------------------------------------------- //
 
 
@@ -380,5 +444,16 @@
 // ---------------------------------------------------- //
 /* function getFizzBuzz(num) {
 
-} */
+} 
+var a= prompt('enter num');
+if (a % 5 == 0 && a % 3 == 0){
+console.log('FizzBuzz')
+} else if (a % 5 == 0 && a % 3 !==0){
+console.log ('Buzz')
+} else if ( a % 3 == 0 && a % 5 !== 0){
+console.log('Fizz')
+}else{
+console.log(a);
+}
+*/
 // ---------------------------------------------------- //
